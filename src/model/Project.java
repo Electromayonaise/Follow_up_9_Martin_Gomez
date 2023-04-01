@@ -17,10 +17,18 @@ public class Project{
 
 	private DateFormat formatter;
 
-	public Project(String name, String clientName, Calendar initialDate, Calendar finalDate, double budget){
+	/*
+	 * This method is the constructor of the class Project
+	 * @param name is the name of the project
+	 * @param clientName is the name of the client
+	 * @param projectType is the type of the project
+	 * @param initialDate is the initial date of the project
+	 * @param finalDate is the final date of the project
+	 * @param budget is the total budget of the project
+	 */
+	public Project(String name, String clientName, String projectType, Calendar initialDate, Calendar finalDate, double budget){
 		
 		this.formatter = new SimpleDateFormat("dd/M/yy");
-
 		this.name = name;	
 		this.clientName = clientName;
 		this.initialDate = initialDate;
